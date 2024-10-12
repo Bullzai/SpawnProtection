@@ -45,8 +45,7 @@
             string progressBar = GenerateProgressBar(progressPercentage);
 
             player.PrintToCenterHtml(
-                $"<font class='fontSize-m' color='orange'>{Localizer["center_isprotected"]}</font><br>" +
-                $"[<font class='fontSize-m' color='{color}'>{(int)protTimer[player.Index]}</font><font color='white'>] SECONDS LEFT!</font><br>" +
+                $"Protected for: <font class='fontSize-m' color='{color}'>{(int)protTimer[player.Index]}</font><br>" +
                 $"<font class='fontSize-l' color='{color}'>{progressBar}</font>"
             );
         }
