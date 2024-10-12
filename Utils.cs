@@ -56,9 +56,9 @@ namespace SpawnProt
 
 			if (player.TeamNum == (byte)CsTeam.Terrorist)
 			{
-				transparentColor = Color.FromArgb(180, 100, 0, 0);
+				transparentColor = Color.FromArgb(254, 100, 0, 0);
 			}
-			else transparentColor = Color.FromArgb(180, 0, 0, 100);
+			else transparentColor = Color.FromArgb(254, 0, 0, 100);
 
 			if (player.PlayerPawn is not null && player.PlayerPawn.Value is not null && player.IsAlive())
 			{
@@ -73,7 +73,7 @@ namespace SpawnProt
 			if (player is null)
 				return;
 
-			Color defaultColor = Color.FromArgb(255, 255, 255, 255);
+			Color defaultColor = Color.FromArgb(254, 255, 255, 255);
 			Server.NextFrame(() =>
 			{
 				if (player.PlayerPawn is not null && player.PlayerPawn.Value is not null && player.IsAlive())
